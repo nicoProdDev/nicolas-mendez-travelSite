@@ -1,0 +1,36 @@
+* , body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+
+}
+section nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+section nav ul li:first-child {
+    flex-grow: 1;
+}
+
+/* section nav ul li:not(:first-child) {
+    margin-left: auto;
+} */
+
+section nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+
+/* Additional styling for visual enhancement */
+section nav {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+}
+
+section nav ul li a:hover {
+    color: #007bff;
+}
