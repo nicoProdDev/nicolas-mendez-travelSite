@@ -4,80 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hawaii</title>
-    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/destinations.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>
-        <section>
+        <section class="navBar">
             <nav>
                 <ul>
-                    <li><a href="../index.html">Travel Site</a></li>
+                    <li class="mainTitle"><a href="../index.html">Travel Site</a></li>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="iceland.html">Hawaii</a></li>
-                    <li><a href="greece.html">Iceland</a></li>
-                    <li><a href="hawaii.html">Greece</a></li>
+                    <li class="navBar__current"><a href="hawaii.html">Hawaii</a></li>
+                    <li><a href="iceland.html">Iceland</a></li>
+                    <li><a href="greece.html">Greece</a></li>
                 </ul>
             </nav>
     </header>
 
     <!-- Cards Schedule  -->
-    <main>
+    <main class="cardsSchedule__img">
         <div>
-            <div>
-                <p>Friday</p>
-                <p>Breakfast</p>
-                <p>lunch</p>
-                <p>Dinner</p>
-                <p>Snorkeling</p>
+            <img src="../assets/Images/hawaii.jpg" alt="Hawaii">
+        </div>
+        <h1 class="mainDestination__title">Hawaii</h1>
+        <div class="destinations__cards--flex">
+
+            <div class="destinations__cards--card">
+                <p class="destinations__cards--title">Friday</p>
+                <div class="destinations__cardsContent--flex">
+                    <p>Breakfast</p>
+                    <p>lunch</p>
+                    <p>Dinner</p>
+                    <p class="destinations__cards--lastElement">Snorkeling</p>
+                </div>
             </div>
-            <div>
-                <p>Saturday</p>
-                <p>Breakfast</p>
-                <p>lunch</p>
-                <p>Dinner</p>
-                <p>Snorkeling</p>
+
+            <div class="destinations__cards--card">
+                <p class="destinations__cards--title">Saturday</p>
+                <div class="destinations__cardsContent--flex">
+                    <p>Breakfast</p>
+                    <p>lunch</p>
+                    <p>Dinner</p>
+                    <p class="destinations__cards--lastElement">Snorkeling</p>
+                </div>
             </div>
-            <div>
-                <p>Sunday</p>
-                <p>Breakfast</p>
-                <p>lunch</p>
-                <p>Dinner</p>
-                <p>Snorkeling</p>
+
+            <div class="destinations__cards--card">
+                <p class="destinations__cards--title">Sunday</p>
+                <div class="destinations__cardsContent--flex">
+                    <p>Breakfast</p>
+                    <p>lunch</p>
+                    <p>Dinner</p>
+                    <p class="destinations__cards--lastElement">Snorkeling</p>
+                </div>
             </div>
         </div>
     </main>
     <!-- Footer -->
     <footer>
-        <div>
-            <h1>contact</h1>
-            <p>info</p>
-            <p>info@travelsite.com</p>
-        </div>
-        <div>
-            <h1>Hours</h1>
-            <div>
-                <div>
-                    <p>MONDAY-FRIDAY</p>
-                    <p>9:00 AM - 5:00 PM</p>
+        <footer class="footerItems__flex footerItems__main">
+            <div class="footerItem">
+                <h1>contact</h1>
+                <p class="footerItem__orange">EMAIL</p>
+                <p class="footerItem__info">info@travelsite.com</p>
+            </div>
+            <div class="footerItem">
+                <h1>Hours</h1>
+                <div class="footerHours__flex">
+                    <div>
+                        <p class="footerItem__orange">MONDAY-FRIDAY</p>
+                        <p class="footerItem__info">9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div>
+                        <p class="footerItem__orange">SATURDAY</p>
+                        <p class="footerItem__info">10:00 AM - 4:00 PM</p>
+                    </div>
+                    <div>
+                        <p class="footerItem__orange">SUNDAY</p>
+                        <p class="footerItem__info">Closed</p>
+                    </div>
+                </div>          
+            </div>
+            <div class="footerItem">
+                <h1>Social</h1>
+                <div class="footerSocialMedia__flex">
+                    <a href="https://www.instagram.com/" class="socialMedia__icon"><img src="../assets/Images/icon-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/" ><img src="../assets/Images/icon-facebook.png" alt="Facebook" id="facebook__icon"></a>
+                    <a href="https://www.twitter.com/"><img src="../assets/Images/icon-twitter.png" alt="Twitter"></a>
                 </div>
-                <div>
-                    <p>SATURDAY</p>
-                    <p>10:00 AM - 4:00 PM</p>
-                </div>
-                <div>
-                    <p>SUNDAY</p>
-                    <p>Closed</p>
-                </div>
-            </div>          
-        </div>
-        <div>
-            <h1>Social</h1>
-            <div>
-                <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://www.twitter.com/"><img src="twitter.png" alt="Twitter"></a>
-        </div>
-    </footer>
+            </div>
+        </footer>
 </body>
 </html>

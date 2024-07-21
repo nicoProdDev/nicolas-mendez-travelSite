@@ -4,81 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
-    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>
-        <section>
+        <section class="navBar">
             <nav>
                 <ul>
-                    <li><a href="index.html">Travel Site</a></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="mainTitle"><a href="index.html">Travel Site</a></li>
+                    <li class="navBar__current"><a href="index.html">Home</a></li>
                     <li><a href="./pages/hawaii.html">Hawaii</a></li>
                     <li><a href="./pages/iceland.html">Iceland</a></li>
                     <li><a href="./pages/greece.html">Greece</a></li>
                 </ul>
             </nav>
         </section>
-            <!-- Get Started section -->
-        <section>
-            <div>
+<!-------- Get Started section -------------->
+        <section class="getStarted__flex">
+            <div class="getStarted__text">
                 <h1>Travelling Comes With Endless Discoveries</h1>
                 <p>Don’t let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-                <a href="">Get Started</a>
+                <button class="button__getStarted" >Get Started</button>
             </div>
-            <img src="" alt="plane travelling around the world">
+            <img class="getStarted__hero" src="./assets/Images/hero.png" alt="plane travelling around the world">
         </section>
     </header>
 
-    <!-- Recomendations -->
+    <!--------- Recomendation cards -------------->
     <main>
-        <h1>Recommendations</h1>
-        <div>
-            <div class="card">
+        <h3 class="cardTitle__recomendations">Recommendations</h3>
+        <div class="cardsContainer__recomendations">
+            <div class="card__recomendations background__hawaii">
                 <h2>Hawaii</h2>
-                <img src="hawaii.jpg" alt="Hawaii">
             </div>
-            <div class="card">
+            <div class="card__recomendations background__iceland">
                 <h2>Iceland</h2>
-                <img src="iceland.jpg" alt="Iceland">
             </div>
-            <div class="card">
+            <div class="card__recomendations background__greece">
                 <h2>Greece</h2>
-                <img src="greece.jpg" alt="Greece">
             </div>
         </div>
     </main>
     <!-- Footer -->
-    <footer>
-        <div>
+    <footer class="footerItems__flex footerItems__main">
+        <div class="footerItem">
             <h1>contact</h1>
-            <p>info</p>
-            <p>info@travelsite.com</p>
+            <p class="footerItem__orange">EMAIL</p>
+            <p class="footerItem__info">info@travelsite.com</p>
         </div>
-        <div>
+        <div class="footerItem">
             <h1>Hours</h1>
-            <div>
+            <div class="footerHours__flex">
                 <div>
-                    <p>MONDAY-FRIDAY</p>
-                    <p>9:00 AM - 5:00 PM</p>
+                    <p class="footerItem__orange">MONDAY-FRIDAY</p>
+                    <p class="footerItem__info">9:00 AM - 5:00 PM</p>
                 </div>
                 <div>
-                    <p>SATURDAY</p>
-                    <p>10:00 AM - 4:00 PM</p>
+                    <p class="footerItem__orange">SATURDAY</p>
+                    <p class="footerItem__info">10:00 AM - 4:00 PM</p>
                 </div>
                 <div>
-                    <p>SUNDAY</p>
-                    <p>Closed</p>
+                    <p class="footerItem__orange">SUNDAY</p>
+                    <p class="footerItem__info">Closed</p>
                 </div>
             </div>          
         </div>
-        <div>
+        <div class="footerItem">
             <h1>Social</h1>
-            <div>
-                <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://www.twitter.com/"><img src="twitter.png" alt="Twitter"></a>
+            <div class="footerSocialMedia__flex">
+                <a href="https://www.instagram.com/" class="socialMedia__icon"><img src="./assets/Images/icon-instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/" ><img src="./assets/Images/icon-facebook.png" alt="Facebook" id="facebook__icon"></a>
+                <a href="https://www.twitter.com/"><img src="./assets/Images/icon-twitter.png" alt="Twitter"></a>
+            </div>
         </div>
     </footer>
 </body>

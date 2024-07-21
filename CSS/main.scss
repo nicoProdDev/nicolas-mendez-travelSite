@@ -1,0 +1,104 @@
+@use './partials/global' as *;
+
+/*-------------- Get Started section--------------*/
+
+.getStarted__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    height: 35rem;
+    background-color: $background-color__main;
+}
+
+.getStarted__hero{
+    height: 20rem;
+}
+
+.getStarted__text{
+    color: $main-color;
+    h1{
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    p{
+        padding-bottom: 2rem;
+    }
+    width: 50%;
+}
+
+.button__getStarted{
+    background-color: $background-color__orange;
+    border: 0;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+
+
+/* --------recomendation cards----------- */
+
+.cardTitle__recomendations {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    color: $main-color;
+  }
+  
+  /* Container for the cards */
+  .cardsContainer__recomendations {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35rem; 
+      gap: 20px; 
+  }
+  
+  .card__recomendations {
+    width: 300px;
+    height: 27rem;
+    background-color: white;
+    border-radius: 5px;
+    
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  @mixin flexEndAlign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+  }
+
+  .background__hawaii{
+    background-image: url(../assets/Images/hawaii.jpg);
+    background-size: cover;
+    background-position: center;
+    @include flexEndAlign;
+  }
+
+  .background__iceland{
+    background-image: url(../assets/Images/iceland.jpg);
+    background-size: cover;
+    background-position: center;
+    @include flexEndAlign;
+  }
+
+  .background__greece{
+    background-image: url(../assets/Images/greece.jpg);
+    background-size: cover;
+    background-position: center;
+    @include flexEndAlign;
+  }
+
+
+  

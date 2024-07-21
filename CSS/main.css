@@ -1,0 +1,197 @@
+*, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+}
+
+/*----------navigation bar------------*/
+.navBar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.navBar nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navBar .mainTitle {
+  font-weight: bold;
+  flex-grow: 1;
+}
+.navBar nav ul li:not(:first-child) {
+  margin-left: auto;
+  margin-left: 1rem;
+}
+.navBar nav ul li {
+  padding: bottom 10px;
+}
+.navBar nav ul li a {
+  color: #335576;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navBar nav {
+  padding: 10px 20px;
+}
+
+.navBar__current {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #DB7A4E;
+}
+
+/*-------------Footer------------------*/
+.footerItems__flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  padding-bottom: 3rem;
+}
+
+.footerItems__main {
+  background-color: #FEFAF5;
+}
+
+.footerItem {
+  display: flex;
+  flex-direction: column;
+}
+.footerItem h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 24px;
+  color: #335576;
+}
+
+.footerItem__info {
+  margin: 5px 0;
+  font-size: 0.8rem;
+  color: #335576;
+}
+
+.footerItem__orange {
+  color: #DB7A4E;
+  font-size: 0.5rem;
+  margin: 5px 0;
+}
+
+.footerHours__flex, .footerSocialMedia__flex {
+  display: flex;
+  gap: 25px;
+}
+
+.footerHours__flex div, .footerSocialMedia__flex a {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSocialMedia__flex img {
+  justify-content: baseline;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 1rem;
+}
+
+#facebook__icon {
+  width: 12px;
+}
+
+/*-------------- Get Started section--------------*/
+.getStarted__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  height: 35rem;
+  background-color: #FEFAF5;
+}
+
+.getStarted__hero {
+  height: 20rem;
+}
+
+.getStarted__text {
+  color: #335576;
+  width: 50%;
+}
+.getStarted__text h1 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.getStarted__text p {
+  padding-bottom: 2rem;
+}
+
+.button__getStarted {
+  background-color: #DB7A4E;
+  border: 0;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+/* --------recomendation cards----------- */
+.cardTitle__recomendations {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  color: #335576;
+}
+
+/* Container for the cards */
+.cardsContainer__recomendations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  gap: 20px;
+}
+
+.card__recomendations {
+  width: 300px;
+  height: 27rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.background__hawaii {
+  background-image: url(../assets/Images/hawaii.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+}
+
+.background__iceland {
+  background-image: url(../assets/Images/iceland.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+}
+
+.background__greece {
+  background-image: url(../assets/Images/greece.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
